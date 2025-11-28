@@ -1,1 +1,211 @@
-<h1>Github pages test<h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Ciencia de Datos</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Evolución tecnológica en el mundo y sus efectos en la educación</h1>
+            <div class="subtitle">
+                Autores: Felipe Alcamán, Alex Nieves, Martín Serrano, Pablo Rodríguez
+            </div>
+        </header>
+        <section>
+            <h2>Contexto</h2>
+            <p>
+                Este proyecto, fue planteado por el interés compartido por la tecnología y nuestra realidad actual
+                como estudiantes universitarios. En los tiempos actuales, con el avance de la tecnología, se ha
+                desarrollado el uso de inteligencia artificial, la cual su uso ha sido dirigido a distintos campos incluida
+                la educación. 
+            </p>
+            <p>
+                En base a esto definimos nuestra pregunta central de investigación:
+                <h4>¿La masificacion de los avances tecnologicos en el siglo XXI ha
+                    mejorado o empeorado el rendimiento en estudiantes de Chile?</h4>
+            </p>
+        </section>
+        <section>
+            <h2>Metodología</h2>
+            <p>
+                Para poder responder esta pregunta que nos hemos planteado, recolectamos datos de distintas fuentes como:
+                <ul>
+                    <li>Exportación de dispositivos tecnologicos en Chile del Banco de Chile</li>
+                    <li>Tráfico de dispositivos en Chile</li>
+                    <li>Rendimiento de estudiantes como el NEM del Mineduc</li>
+                    <li>Encuestas a estudiantes universitarios acerca de la IA</li>
+                    <li>Uso y habitos relacionado con libros</li>
+                </ul>
+                Finalmente, con estos datos se realizaron sus respectivos procesos
+                de ETL para poder posteriormente proceder con el EDA.
+        </section>
+        <section>
+            <h2>Análisis y resultados de datos</h2>
+            <p>
+                Nuestro primer analisis es sobre el trafico de dispositivos en Chile:
+            </p>
+                <div class="imagen">
+                <img src="imgs/grafico_dispositivo_dominante.png" width="800" height="600">
+                </div>
+            <p class="datos">
+                Según podemos ver, a principios del 2010 los portatiles o computadores eran más comunes,
+                pero con el paso del tiempo se puede ver un aumento de los dispositivos mobiles el cual supera
+                al resto. Esto es evidenciable en el dia a dia de como han ido cambiando las tendencias. Por ultimo
+                tenemos las tables que tienen un uso infimo pero son parte del total.
+            </p>
+            <p>
+                Ahora queremos ver cuanto ha ido aumentando la exportación de dispositivos en Chile en los ultimos años
+            </p>
+                <div class="imagen">
+                    <img src="imgs/grafico_exportacion_dispositivos.png" width="800" height="600">
+                </div>
+                <p class="datos">
+                    Relacionandolo con el gráfico anterior, podemos ver que si bien ambos tienen una gran cantidad
+                    de exportaciones en millones de dolares, los dispositivos mobiles vuelven a superar a los portatiles o computadores
+                </p>
+            <p>
+                Respecto a la IA vamos a ver un par de gráficos relacionados con las encuestas de los universitarios de su percepción con la IA
+                Primero con respecto a la frecuencia del uso de IA
+            </p>
+            <div class="imagen">
+                <img src="imgs/Uso de IA.png" width="500" height="300">
+            </div>
+            <p class="datos">
+                En base a las respuestas de los estudiantes, se puede ver que hay un gran uso evidente de IA diario, seguido
+                por uso mensual y ya en mucha menor medida mensual. Tambien notar que son casi inexistentes los estudiantes que
+                respondieron no usar IA.
+            </p>
+            <p>
+                Luego, acerca del aprendizaje mediante IA
+            </p>
+            <div class="imagen">
+                <img src="imgs/Aprendizaje_IA.png" width="500" height="300">
+            </div>
+            <p class="datos">
+                Podemos ver que la gran mayoria de los estudiantes opinan que el uso de IA si influye
+                en el aprendizaje de los alumnos, esto puede ser debido a la facilidad del acceso de informacion
+                que el estudiante necesita con rapidez inmediata.
+            </p>
+            <p>
+                Por ultimo tenemos 3 gráficas relacionado con como afecta la IA al pensamiento crítico y la creatividad
+            </p>
+            <div class="imagen">
+                <img src="imgs/graficas_de_IA.png" width="500" height="300">
+            </div>
+            <p class="datos">
+                Podemos ver que una gran cantidad de estudiantes opina que el uso de IA mejora el pensamiento crítico, por otro
+                lado, en las otras 2 gráficas acerca de efectos perjudiciales del uso de IA la gran mayoria de los estudiantes tienen una
+                opinión neutra o no consideran que la IA afecta negativamente.
+            </p>
+            <p>
+                Ahora viendo un poco más localmente, tenemos un gráfico acerca del NEM de los estudiantes de enseñanza media de Chile
+            </p>
+                <div class="imagen">
+                <img src="imgs/distribucionNEMegreso.png" width="500" height="300">
+                </div>
+            <p class="datos">
+                Se puede apreciar que con los datos que tenemos, la distrución promedio del NEM, ha ido lentamente subiendo con el paso de
+                los años, siendo el unico año atipico el 2020, el cual por motivos obvios sabemos que fue el año donde ocurrio el COVID.
+            </p>
+            <p>
+                Respecto a los otros datos que tenemos, recolectamos datos de libros y sus tendencias.
+                Primero, vamos a ver un gráfico de las ventas de libros dependiendo de su tipo
+            </p>
+            <div class="imagen">
+                <img src="imgs/ventaslibros.png" width="500" height="300">
+            </div>
+            <p class="datos">
+                Se evidencia en este grafico que existe una diferencia abrumadora entre los libros de otros generos y
+                los libros de estudio, esto puede llevar a suponer que los estudiante prefieren estudiar con otros metodos o recursos
+                que no sean libros de estudio fisicos.
+            </p>
+            <p>
+                Este grafico, muestra la cantidad de libros impresos leidos en los ultimos 2 años
+            </p>
+                <div class="imagen">
+                <img src="imgs/librosimpresos.png" width="500" height="300">
+                </div>
+            <p class="datos">
+                El grafico muestra como va decreciendo de a poco la cantidad de gente que lee libros impresos en una cierta
+                cantidad pero si muestra una tendencia alta en una cantidad baja de libros.
+            </p>
+            <p>
+                Relacionando con el gráfico anterior, el siguiente gráfico muestra la cantidad de e-book leidos
+                en los ultimos 2 años y la cantidad de personas.
+            </p>
+                <div class="imagen">
+                <img src="imgs/ebook.png" width="500" height="300">
+                </div>
+            <p class="datos">
+                Se ve claramente que si bien, hay una cantidad considerable de gente que no lee ningún e-book, comparando
+                con la gente que si lee e-book si existe una gran diferencia, siendo entre 1 a 5 e-book donde hay la mayor cantidad
+                de gente para luego ir decreciendo poco a poco y luego volver a subir en más de 20, el cual se puede suponer que es gente
+                aficionada a la lectura y tambien a el facil acceso que se puede tener a estos libros digitales.
+            </p>
+            <p>
+                Terminando de relacionar los ultimos 2 graficos podemos ver el formato preferido de libro pero
+                en un ambito academico
+            </p>
+                <div class="imagen">
+                <img src="imgs/formatopreferido.png" width="500" height="300">
+                </div>
+            <p class="datos">
+                Se puede apreciar que la gran mayoria de los estudiantes se inclina por ambos formatos, seguido por
+                los que solo prefieren el formato fisico y por ultimo los que solo prefieren en digital. Esto se relaciona con los
+                2 ultimos graficos vistos y tiene sentido.
+            </p>
+            <p>
+                Finalmente recopilando todo lo que tenemos, volviendo a la pregunta central, tenemos unos
+                graficos con un modelo de predicción acerca del NEM
+            </p>
+                <div class="imagen">
+                <img src="imgs/precisionmodelo.png" width="500" height="300">
+                </div>
+            <p class="datos">
+                Podemos ver que nuestra linea ideal del modelo, si bien no tiene una cantidad inmensa de datos, si se logra
+                ajustar relativamente a los valores predichos por el modelo, esto tambien tiene sentido ya que las metricas del
+                modelo tienen un alto coeficiente de correlacion y un bajo error cuadratico medio.
+            </p>
+            <p>
+                Relacionando con lo anterior, ahora tenemos modelos relacionando el NEM con los distintos dispositivos.
+            </p>
+                <div class="imagen">
+                <img src="imgs/Dispositivosmodelo.png" width="500" height="300">
+                </div>
+            <p class="datos">
+                En base a estos modelos, se ve los datos reales y predichos se ven como una recta con una diferencia en los
+                datos, esto se debe a que el valor del NEM en promedio por año no varia demasiado, por lo que al graficar los datos
+                predichos en base a los datos reales, tendria valores similares y no se podria ver una diferencia apreciable para el ojo humano a
+                pesar de que esta si existe si se usa el modelo para predecir de forma manual por lo que se tuvo que ajustar los datos para
+                poder apreciar de mejor forma que a mayor cantidad de dispositivos peor es el aprendizaje.
+            </p>
+        </section>
+        <section>
+            <h2>Conclusiones y Resultados</h2>
+                <p>
+                    Primero hay que destacar una pregunta importante, ¿que pudo o puede haber salido mal?.
+                    Principalmente, a lo largo del desarrollo del proyecto si bien pudimos obtener diversos datos relacionados con el
+                    objetivo de nuestra investigacion si encontramos la falta de algunos de estos que podrian ser más especificos y esto
+                    los hacia más dificil de encontrar. Un ejemplo es que a comparación del NEM o las exportaciones que son datos publicos de entidades
+                    como el gobierno o el banco, no pudimos encontrar algo como el aumento de IA en los ultimos años, ya que es algo muy abstracto y al ser
+                    algo reciente de los ultimos no hay estudios tan extensos como para poder encontrar datos acerca de esto.
+                </p>
+                <p>
+                    Para finalizar, pudimos responder nuestras preguntas de investigacion y nuestra pregunta central, en la que si pudimos
+                    ver que la masificacion de tecnologia puede empeorar el rendimiento de estudiantes es Chile en base a nuestro modelo.
+                </p>
+                <p>
+                    Gracias por leer :D
+                </p>
+        </section>
+        <footer>
+            <p>&copy; 2025 Proyecto de Análisis de Datos, Felipe Alcamán, Alex Nieves, Martin Serrano, Pablo Rodríguez.</p>
+        </footer>
+    </div>
+</body>
+</html>
